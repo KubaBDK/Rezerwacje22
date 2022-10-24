@@ -14,64 +14,63 @@ import { FlightDetailsComponent } from './pages/flight-details/flight-details.co
 import { AddFlightComponent } from './pages/add-flight/add-flight.component';
 import { FlightTicketsComponent } from './pages/flight-tickets/flight-tickets.component';
 import { DisplayIssuesComponent } from './pages/display-issues/display-issues.component';
-// import { UserLoginGuard } from './guards/UserLogin/user-login.guard';
-// import { FlightGudardGuard } from './guards/Flight/flight-gudard.guard';
+
 
 const routes: Routes = [
   { path: '', component: FlightBookingComponent },
-  // { path: '', component: HomeComponent, canActivate: [FlightGudardGuard] },
+
   { path: 'login-page', component: LoginPageComponent },
   { path: 'signup', component: SignupComponent },
 
   {
     path: 'report-issue',
     component: ReportComponent,
-    // canActivate: [UserLoginGuard],
+
   },
   {
     path: 'issues',
     component: DisplayIssuesComponent,
-    // canActivate: [UserLoginGuard],
+
   },
   {
     path: 'flights',
     component: FlightsComponent,
-    // canActivate: [UserLoginGuard],
+
   },
   {
     path: 'flight-details',
     component: FlightDetailsComponent,
-    // canActivate: [UserLoginGuard],
+
   },
   {
     path: 'flight-booking',
     component: FlightBookingComponent,
-    // canActivate: [UserLoginGuard, FlightGudardGuard],
+
   },
   {
     path: 'flight-tickets',
     component: FlightTicketsComponent,
-    // canActivate: [UserLoginGuard],
+
   },
   {
     path: 'flight-history',
     component: FlightHistoryComponent,
-    // canActivate: [UserLoginGuard, FlightGudardGuard],
+
   },
   {
     path: 'flight-receipt',
     component: InvoiceComponent,
-    // canActivate: [UserLoginGuard],
+
   },
   {
     path: 'add-flight',
     component: AddFlightComponent,
-    // canActivate: [UserLoginGuard],
+
   },
   {
     path: 'account-settings',
     component: AccountSettingsComponent,
-    // canActivate: [UserLoginGuard],
+
   },
   { path: '**', component: HomeComponent },
 ];
